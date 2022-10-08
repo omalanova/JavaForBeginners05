@@ -44,8 +44,21 @@ public class HW6 {
 //        task15();
 //        vvod(16, line);
 //        task16();
-        vvod(17, line);
-        task17(0, 7, 3);
+//        vvod(17, line);
+//        task17(0, 7, 3);
+//
+//        vvod(18, line);
+//        task18(2, 9, 3);
+//        vvod(19, line);
+//        task19(2.6);
+//        vvod(20, line);
+//        task20(5);
+//        vvod(21, line);
+//        task21();
+//        vvod(22, line);
+//        task22(1);
+        vvod(211, line);
+        task211();
     }
 
     public static void vvod(int num, String line){
@@ -204,8 +217,79 @@ public class HW6 {
     }
 
     public static void task17(int n, int m, int l) {
-        for (int i = n; i < 2 * l; i += m) {
-            if (i % 2 == 1) {
+
+//        for (int i = n; i < l; i += ) {
+//            if (i % 2 == 1) {
+//                System.out.print(i + " ");
+//            }
+//        }
+    }
+
+    public static void task18() {
+
+    }
+
+    public static void task18(int n, int m, int l) {
+        for (int i = 0; i < l; i++) {
+            System.out.print((int) (Math.random() * (m - n + 1) + n) + " ");
+        }
+    }
+
+    public static void task19(double n) {
+        if (n == 0 || n == 0.5) {
+            System.out.println(0);
+        } else {
+            System.out.println((n * n + 1)/(2 * n - 1));
+        }
+    }
+
+    public static void task20(int l) {
+        int y1 = 1;
+        int y2 = 2;
+        System.out.println(y1);
+        System.out.println(y2);
+
+        int m = 2 * y2 + y1; //y3
+        System.out.println(m);
+        int n = 2 * m + y2; //y4
+        System.out.println(n);
+
+        for (int i = 3; i < l - 1; i++) {
+            int y = 2 * n + m;
+            System.out.println(y);
+            m = n;
+            n = y;
+        }
+    }
+
+    public static void task21() {
+        for (int i = 10; i <= 99; i++) {
+            if (Math.abs(i / 10 - i % 10) <= 3) {
+                System.out.println(i);
+            }
+        }
+    }
+
+    public static void task22(double x) {
+        if (x < 0) {
+            System.out.println(x);
+        } else if (x > 1.5) {
+            System.out.println(2.5 * x * x * x + 6 * x * x - 30);
+        } else {
+            System.out.println(x + 1);
+        }
+
+    }
+
+    public static void task211() {
+        for (int i = 2; i < 100; i++) {
+            int count = 0;
+            for (int j = 1; j <= i; j++) {
+                if (i % j == 0) {
+                    count++;
+                }
+            }
+            if (count == 2) {
                 System.out.print(i + " ");
             }
         }
