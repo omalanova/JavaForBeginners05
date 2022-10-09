@@ -40,8 +40,8 @@ public class HW6 {
 //        task13(31);
 //        vvod(14, line);
 //        task14();
-//        vvod(15, line);
-//        task15();
+        vvod(15, line);
+        task15();
 //        vvod(16, line);
 //        task16();
 //        vvod(17, line);
@@ -57,8 +57,8 @@ public class HW6 {
 //        task21();
 //        vvod(22, line);
 //        task22(1);
-        vvod(211, line);
-        task211();
+//        vvod(211, line);
+//        task211();
     }
 
     public static void vvod(int num, String line){
