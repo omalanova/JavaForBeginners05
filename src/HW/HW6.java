@@ -59,6 +59,8 @@ public class HW6 {
 //        task22(1);
 //        vvod(211, line);
 //        task211();
+        vvod(222, line);
+        task222("Sun", 10, 2);
     }
 
     public static void vvod(int num, String line){
@@ -293,6 +295,77 @@ public class HW6 {
                 System.out.print(i + " ");
             }
         }
+    }
+
+
+    public static void task222(String day, int month, int date) {
+        String day1 = "Sun";
+        String day2 = "Mon";
+        String day3 = "Tue";
+        String day4 = "Wed";
+        String day5 = "Thu";
+        String day6 = "Fri";
+        String day7 = "Sat";
+        String month1 = "Jan";
+        String month2 = "Feb";
+        String month3 = "Mar";
+        String month4 = "Apr";
+        String month5 = "May";
+        String month6 = "Jun";
+        String month7 = "Jul";
+        String month8 = "Aug";
+        String month9 = "Sep";
+        String month10 = "Okt";
+        String month11 = "Nov";
+        String month12 = "Sep";
+        String output_month;
+        switch (month) {
+            case 1:
+                output_month = "Jan";
+            break;
+            case 2:
+                output_month = "Feb";
+            break;
+            case 3:
+                output_month = "Mar";
+            break;
+            case 4:
+                output_month = "Apr";
+            break;
+            case 5:
+                output_month = "May";
+            break;
+            case 6:
+                output_month = "Jun";
+            break;
+            case 7:
+                output_month = "Jul";
+            break;
+            case 8:
+                output_month = "Aug";
+            break;
+            case 9:
+                output_month = "Sep";
+            break;
+            case 10:
+                output_month = "Oct";
+            break;
+            case 11:
+                output_month = "Nov";
+            break;
+            case 12:
+                output_month = "Dec";
+            break;
+            default:
+                output_month = "Неправильно введен месяц";
+        }
+        System.out.println(day1 + ", " + output_month + " 0" + date) ;
+        System.out.println(day2 + ", " + output_month + " 0" + (date + 1));
+        System.out.println(day3 + ", " + output_month + " 0" + (date + 2));
+        System.out.println(day4 + ", " + output_month + " 0" + (date + 3));
+        System.out.println(day5 + ", " + output_month + " 0" + (date + 4));
+        System.out.println(day6 + ", " + output_month + " 0" + (date + 5));
+        System.out.println(day7 + ", " + output_month + " 0" + (date + 6));
     }
 
 
